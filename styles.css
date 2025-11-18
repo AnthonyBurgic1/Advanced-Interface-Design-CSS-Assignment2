@@ -1,0 +1,76 @@
+/* Custom font (vintage serif for headings) */
+@font-face {
+  font-family: 'NorthwoodsSerif';
+  src: url('../fonts/NorthwoodsSerif.woff2') format('woff2');
+}
+
+body {
+  background: url('Blk-background.webp') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #00bfff;
+  scroll-behavior: smooth;
+}
+
+.title-font {
+  font-family: 'NorthwoodsSerif', serif;
+  letter-spacing: 1px;
+  color: #707070;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(20, 40, 60, 0.7), rgba(20, 40, 60, 0.7)), url('Blk-background.webp') center/cover no-repeat;
+}
+
+.book-cover {
+  width: 250px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.book-cover:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #2b5d7e;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #397da5;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+/* Navbar logo styling */
+.navbar-logo {
+  
+ /* Adjust size as desired */
+  height: 40px;             
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Center brand and links vertically */
+.navbar .container {
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.navbar-brand span {
+  display: inline-block;
+  vertical-align: middle;
+}
